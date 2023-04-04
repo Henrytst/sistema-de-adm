@@ -1,0 +1,109 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+footer{
+    margin-bottom: 50px;
+}
+
+.index {
+    background-color: #2a1e47;
+}
+
+.container-image{ 
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    overflow: hidden;
+    background-image: url('../arquivos/sem_imagem/sem_foto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+ }
+
+ .centralize-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+ }
+
+.telaLogin {
+    width: 350px;
+    position: absolute;
+    top: 200px;
+    box-shadow: 1px 3px 20px rgb(20, 1, 43);
+    background-color: rgb(255, 255, 255);
+    color: #2a1e47;
+    font-weight: bold;
+
+}
+
+.linkMenu {
+    text-decoration: none;
+    font-weight:bolder;
+    display: block;
+    padding: 20px 30px;
+    color: rgb(233, 230, 230);
+    margin: 2px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#check[type="checkbox"]:checked~nav {
+    transform: translateX(300px);
+}
+
+#ulMenu {
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    padding-left: 0;
+}
+
+#imgMenu {
+    width: 40px;
+}
+
+#check[type="checkbox"] {
+    display: none;
+}
+
+#menu {
+    background-color: rgba(16, 16, 16, .8);
+    width: 300px;
+    left: -300px;
+    height: 100%;
+    position: absolute;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.linkMenu:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#labelMenu {
+    padding: 15px;
+    position: absolute;
+    z-index: 2;
+}
+
+.sair {
+    margin-top: 100%;
+}
+
+.sair:hover {
+    background-color: brown;
+    font-size: larger;
+}
